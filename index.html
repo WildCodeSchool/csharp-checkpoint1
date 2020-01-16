@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkpoint 1</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.7.5-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+<!-- START NAV -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../">
+                <img src="assets/logo.png"
+                     alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+        </div>
+    </div>
+</nav>
+<!-- END NAV -->
+
+<header class="hero is-info is-medium is-bold">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">Checkpoint 1</h1>
+        </div>
+    </div>
+</header>
+
+
+<main class="container">
+    <!-- START ARTICLE FEED -->
+    <section class="articles">
+        <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content has-text-centered">
+                            <h2 class="title article-title">Somme d'un tableau</h2>
+                        </div>
+                    </div>
+                    <div class="content article-body">
+                        <ul>
+                            <li>Ecris une méthode qui récupère un tableau à partir de l'entrée standard (utilisateur)</li>
+                            <li>Ecris une méthode statique dans la classe Program qui renvoie la somme des éléments du tableau d'entiers spécifié par l'utilisateur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END ARTICLE -->
+        </div>
+
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <h2 class="title article-title">Moyenne</h2>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <ul>
+                                <li>Ecris une fonction qui fait la moyenne des éléments d'un tableau spécifié par l'utilisateur</li>
+                                <li>Sers-toi des fonctions écrites plus haut dans la mesure du possible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content has-text-centered">
+                            <h2 class="title article-title">Trier un tableau</h2>
+                        </div>
+                    </div>
+                    <div class="content article-body">
+                        <ul>
+                            <li>Ecris un algorithme qui trie par ordre croissant tous les éléments du tableau spécifié par l'utilisateur</li>
+                            <li>Plusieurs algorithmes sont à ta disposition: <a href="https://fr.wikipedia.org/wiki/Tri_par_insertion">tri par insertion</a> ou <a href="https://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles">tri à bulles</a></li>
+                            <li>Conseil: Après avoir réalisé l'algorithme dans ta tête, traduis le pseudo-code sur Wikipedia en C#</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END ARTICLE -->
+            <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content has-text-centered">
+                            <h2 class="title article-title">Compilation en ligne de commande</h2>
+                        </div>
+                    </div>
+                    <div class="content article-body">
+                        <ul>
+                            <li>Ecris un fichier à l'extension .bat qui est un script qui réalise l'opération de compilation de ton programme</li>
+                            <li>Lorsque tu exécutes le script, celui-ci doit faire la compilation de ton programme dans le dossier bin\Release</li>
+                            <li>Rappel: tu exécutes le script en écrivant son nom en ligne de commande</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content has-text-centered">
+                            <h2 class="title article-title">Le PATH</h2>
+                        </div>
+                    </div>
+                    <div class="content article-body">
+                        <ul>
+                            <li>Une fois ton programme compilé, rend-le accessible de n'importe où en manipulant la variable d'environnement PATH</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END ARTICLE -->
+        </div>
+    </section>
+    <!-- END ARTICLE FEED -->
+</main>
+
+<script async type="text/javascript" src="../js/bulma.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), {});
+    });
+</script>
+</body>
+
+</html>
